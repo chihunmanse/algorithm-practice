@@ -9,7 +9,7 @@ class Solution:
         indegree = [0] * numCourses
 
         # 간선 정보를 기반으로 그래프 및 진입 차수 배열 초기화
-        for u, v in prerequisites:
+        for v, u in prerequisites:
             graph[u].append(v)
             indegree[v] += 1
         
