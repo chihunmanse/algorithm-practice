@@ -1,4 +1,4 @@
-from collections import deque
+from collections import deque, defaultdict
 
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
