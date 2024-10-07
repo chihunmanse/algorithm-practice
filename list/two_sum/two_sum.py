@@ -13,7 +13,7 @@ class Solution:
         return None 
 
     # two pointer 이용 O(nlogn)
-    def two_sum(nums, target):
+    def twoSum(nums, target):
         nums = [[n, i] for i, n in enumerate(nums)]
         nums.sort(key=lambda x: x[0])
         l, r = 0, len(nums) - 1
